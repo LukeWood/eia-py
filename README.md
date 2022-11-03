@@ -4,6 +4,14 @@ _Python bindings for the Energy Information Administration API_
 
 ## Repo Overview
 
+TODO
+
+## Plan of Action
+
+- write methods to scrape data from the API and serialize
+- write github action to automate this
+- write way to load data to numpy array/pandas
+
 ## Development Setup
 
 To get started working on the repository, please clone the repo:
