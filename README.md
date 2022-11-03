@@ -1,5 +1,3 @@
-# EIA Py
-
 ![](media/logo.png)
 
 _Python bindings for the Energy Information Administration API_
