@@ -12,5 +12,3 @@ def api_key():
     api_key = os.environ.get("EIA_API_KEY", None)
     assert api_key is not None
     return api_key
-
-
