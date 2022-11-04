@@ -4,7 +4,13 @@ _Python bindings for the Energy Information Administration API_
 
 ## Repo Overview
 
-TODO
+Our repository consists of two major components: a package `eia-py` and a set of
+exploratory data analysis notebooks (EDA).
+
+The package can be found under `eia`.  The package handles data scraping and loading.
+The `eda` directory holds all tools required to perform exploratory data analysis.  The
+relationship between the two is that the scripts and notebooks in `eda` rely on the
+package in `eia`.
 
 ## Plan of Action
 
@@ -32,4 +38,10 @@ in a python interpreted of your choice:
 
 ```
 import eia
+```
+
+Then, you need to export an environment variable for the API key:
+
+```
+export EIA_API_KEY="{your-key}"
 ```

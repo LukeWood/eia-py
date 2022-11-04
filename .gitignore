@@ -1,1 +1,4 @@
 eia_py.egg-info/
+/Users/lukewood/workspace/eia-py/eia/__pycache__
+.DS_Store
+__pycache__
