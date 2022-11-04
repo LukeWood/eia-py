@@ -1,7 +1,6 @@
 import os
 
-from setuptools import find_packages
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def read(rel_path):
@@ -34,6 +33,8 @@ setup(
     extras_require={
         "dev": [
             "flake8",
+            "black",
+            "isort",
             "pytest",
             "pytype",
             "setuptools",
