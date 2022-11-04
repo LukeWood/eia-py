@@ -38,9 +38,11 @@ class EIAClient:
         if route[0] != "/":
             raise ValueError(f"All routes must start with '/'.  Got route={route}.")
 
-        response = f"{self.base_url}{route}?api_key={self.api_key}"
+        path = f"{self.base_url}{route}?api_key={self.api_key}"
+        response = requests.get(path)
         return response.json()
 
+    @property
     def base_url(self):
         """base_url contains the base url for the EIA api"""
         return "https://api.eia.gov/v2/electricity"
