@@ -6,6 +6,16 @@ class EIAClient:
 
     The primary purpose of this class is to provide a layer of abstraction around the
     HTTP calls required to get access to the EIA data.
+
+
+    Usage:
+
+    ```python
+    import eia
+
+    client = eia.scraping.EIAClient(api_key=eia.scraping.api_key())
+    client.get('/v2/electricity/retail-sales/')
+    ```
     """
 
     def __init__(self, api_key):
@@ -16,17 +26,17 @@ class EIAClient:
             )
         self.api_key = api_key
 
-    def request(self, route):
-        """`request()` performs a get request to the specified route, returning JSON.
+    def get(self, route):
+        """`get()` performs a get request to the specified route, returning JSON.
 
-        `request()` performs a get request using the specified API key, and returns a
+        `get()` performs a get request using the specified API key, and returns a
         dictionary representing the response JSON provided by the EIA api.
 
         Returns:
             dictionary containing response.
         """
         if route[0] != "/":
-            raise ValueError("All routes must start with '/'.  Got " f"route={route}.")
+            raise ValueError(f"All routes must start with '/'.  Got route={route}.")
 
         response = f"{self.base_url}{route}?api_key={self.api_key}"
         return response.json()
