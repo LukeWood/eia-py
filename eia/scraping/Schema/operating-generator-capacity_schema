@@ -1,0 +1,115 @@
+{
+  "response": {
+    "id": "operating-generator-capacity",
+    "name": "Inventory of Operable Generators",
+    "description": "Inventory of operable generators in the U.S.\n    Source: Forms EIA-860, EIA-860M",
+    "frequency": [
+      {
+        "id": "monthly",
+        "description": "One data point for each month.",
+        "query": "M",
+        "format": "YYYY-MM"
+      }
+    ],
+    "facets": [
+      {
+        "id": "stateid",
+        "description": "State"
+      },
+      {
+        "id": "sector",
+        "description": "Sector"
+      },
+      {
+        "id": "entityid",
+        "description": "Entity ID and Name"
+      },
+      {
+        "id": "plantid",
+        "description": "Plant ID and Name"
+      },
+      {
+        "id": "generatorid",
+        "description": "Generator ID"
+      },
+      {
+        "id": "unit",
+        "description": "Unit Code"
+      },
+      {
+        "id": "technology",
+        "description": "Technology"
+      },
+      {
+        "id": "energy_source_code",
+        "description": "Primary Energy Source"
+      },
+      {
+        "id": "prime_mover_code",
+        "description": "Prime Mover Code"
+      },
+      {
+        "id": "balancing_authority_code",
+        "description": "Balancing Authority"
+      },
+      {
+        "id": "status",
+        "description": "Operating Status Code"
+      }
+    ],
+    "data": {
+      "nameplate-capacity-mw": {
+        "alias": "Nameplate Capacity",
+        "units": "MW"
+      },
+      "net-summer-capacity-mw": {
+        "alias": "Net Summer Capacity",
+        "units": "MW"
+      },
+      "net-winter-capacity-mw": {
+        "alias": "Net Winter Capacity",
+        "units": "MW"
+      },
+      "operating-year-month": {
+        "alias": "Operating Date (Year and Month)"
+      },
+      "planned-retirement-year-month": {
+        "alias": "Planned Retirement Date (Year and Month)"
+      },
+      "planned-derate-year-month": {
+        "alias": "Planned Derate Date (Year and Month)"
+      },
+      "planned-derate-summer-cap-mw": {
+        "alias": "Magnitude of Planned Derate (Summer Capacity)",
+        "units": "MW"
+      },
+      "planned-uprate-year-month": {
+        "alias": "Planned Uprate Date (Year and Month)"
+      },
+      "planned-uprate-summer-cap-mw": {
+        "alias": "Magnitude of Planned Uprate (Summer Capacity)",
+        "units": "MW"
+      },
+      "county": {
+        "alias": "County"
+      },
+      "longitude": {
+        "alias": "Longitude"
+      },
+      "latitude": {
+        "alias": "Latitude"
+      }
+    },
+    "startPeriod": "2008-01",
+    "endPeriod": "2022-08",
+    "defaultDateFormat": "YYYY-MM",
+    "defaultFrequency": "monthly"
+  },
+  "request": {
+    "command": "/v2/electricity/operating-generator-capacity/",
+    "params": {
+      "api_key": "so1nmwhPARGb1MW1FFZLADVX1oeYYBK95gJkJCxQ"
+    }
+  },
+  "apiVersion": "2.0.3"
+}

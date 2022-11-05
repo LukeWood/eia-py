@@ -1,0 +1,53 @@
+{
+  "id": "emissions-by-state-by-fuel",
+  "name": "Emissions from Energy Consumption at Conventional Power Plants and Combined-Heat-and-Power Plants",
+  "description": "Emissions from electricity generation and the production of useful thermal output at conventional power plants and combined-heat-and-power plants.\n    See Electric Power Annual, Technical Notes for a description of the sources and methodology used to develop the emissions estimates.\n    Sources: Forms EIA-860, EIA-923, and calculations made by the Office of  Energy Production, Conversion & Delivery (EPCD)\n    Product: State Electricity Profiles, Table 7",
+  "frequency": [
+    {
+      "id": "annual",
+      "description": "One data point for each calendar year.",
+      "query": "A",
+      "format": "YYYY"
+    }
+  ],
+  "facets": [
+    {
+      "id": "stateid",
+      "description": "State"
+    },
+    {
+      "id": "fuelid",
+      "description": "Energy Source"
+    }
+  ],
+  "data": {
+    "so2-rate-lbs-mwh": {
+      "alias": "SO2 Emissions Rate per MWh",
+      "units": "pounds per megawatthour"
+    },
+    "so2-short-tons": {
+      "alias": "SO2 Emissions",
+      "units": "short tons"
+    },
+    "nox-rate-lbs-mwh": {
+      "alias": "NOx Emissions Rate per MWh",
+      "units": "pounds per megawatthour"
+    },
+    "nox-short-tons": {
+      "alias": "NOx Emissions",
+      "units": "short tons"
+    },
+    "co2-rate-lbs-mwh": {
+      "alias": "CO2 Emissions Rate per MWh",
+      "units": "pounds per megawatthour"
+    },
+    "co2-thousand-metric-tons": {
+      "alias": "CO2 Emissions",
+      "units": "thousand metric tons"
+    }
+  },
+  "startPeriod": 1990,
+  "endPeriod": 2020,
+  "defaultDateFormat": "YYYY",
+  "defaultFrequency": "annual"
+}

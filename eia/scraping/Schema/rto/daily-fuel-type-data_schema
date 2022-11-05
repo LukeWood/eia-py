@@ -1,0 +1,38 @@
+{
+  "id": "daily-fuel-type-data",
+  "name": "Daily Generation by Energy Source",
+  "description": "Daily net generation by balancing authority and energy source.  \n    Source: Form EIA-930\n    Product: Hourly Electric Grid Monitor",
+  "frequency": [
+    {
+      "id": "daily",
+      "description": "One data point for each day.",
+      "query": "D",
+      "format": "YYYY-MM-DD"
+    }
+  ],
+  "facets": [
+    {
+      "id": "respondent",
+      "description": "Balancing Authority / Region"
+    },
+    {
+      "id": "fueltype",
+      "description": "Energy Source"
+    },
+    {
+      "id": "timezone",
+      "description": "Time Zone for Determining Date"
+    }
+  ],
+  "data": {
+    "value": {
+      "aggregation-method": "SUM",
+      "alias": "Net Generation",
+      "units": "megawatthours"
+    }
+  },
+  "startPeriod": "2018-06-30",
+  "endPeriod": "2022-11-04",
+  "defaultDateFormat": "YYYY-MM-DD",
+  "defaultFrequency": "daily"
+}

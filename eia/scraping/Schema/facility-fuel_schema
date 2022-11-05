@@ -1,0 +1,83 @@
+{
+  "response": {
+    "id": "facility-fuel",
+    "name": "Electric Power Operations for Individual Power Plants (Annual and Monthly)",
+    "description": "Annual and monthly electric power operations for inidividual power plants, by energy source and prime mover\n    Source: Form EIA-923",
+    "frequency": [
+      {
+        "id": "monthly",
+        "description": "One data point for each month.",
+        "query": "M",
+        "format": "YYYY-MM"
+      },
+      {
+        "id": "quarterly",
+        "description": "One data point every 3 months.",
+        "query": "Q",
+        "format": "YYYY-\"Q\"Q"
+      },
+      {
+        "id": "annual",
+        "description": "One data point for each calendar year.",
+        "query": "A",
+        "format": "YYYY"
+      }
+    ],
+    "facets": [
+      {
+        "id": "plantCode",
+        "description": "Plant ID and Name"
+      },
+      {
+        "id": "fuel2002",
+        "description": "Energy Source"
+      },
+      {
+        "id": "state",
+        "description": "State"
+      },
+      {
+        "id": "primeMover",
+        "description": "Prime Mover"
+      }
+    ],
+    "data": {
+      "generation": {
+        "alias": "Net Generation",
+        "units": "megawatthours"
+      },
+      "gross-generation": {
+        "alias": "Gross Generation",
+        "units": "megawatthours"
+      },
+      "total-consumption": {
+        "alias": "Consumption of Fuels for Electricity Generation and Useful Thermal Output (Physical Units)"
+      },
+      "total-consumption-btu": {
+        "alias": "Consumption of Fuels for Electricity Generation and Useful Thermal Output (BTUs)",
+        "units": "MMBtu"
+      },
+      "consumption-for-eg": {
+        "alias": "Consumption of Fuels for Electricity Generation (Physical Units)"
+      },
+      "consumption-for-eg-btu": {
+        "alias": "Consumption of Fuels for Electricity Generation (BTUs)",
+        "units": "MMBtu"
+      },
+      "average-heat-content": {
+        "alias": "Average Heat Content of Consumed Fuels"
+      }
+    },
+    "startPeriod": "2001-01",
+    "endPeriod": "2021-07",
+    "defaultDateFormat": "YYYY-MM",
+    "defaultFrequency": "monthly"
+  },
+  "request": {
+    "command": "/v2/electricity/facility-fuel/",
+    "params": {
+      "api_key": "so1nmwhPARGb1MW1FFZLADVX1oeYYBK95gJkJCxQ"
+    }
+  },
+  "apiVersion": "2.0.3"
+}
