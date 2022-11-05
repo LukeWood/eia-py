@@ -1,0 +1,42 @@
+{
+  "id": "interchange-data",
+  "name": "Hourly Interchange by Neighboring Balancing Authority",
+  "description": "Daily interchange between neighboring balancing authorities.  \n    Source: Form EIA-930\n    Product: Hourly Electric Grid Monitor",
+  "frequency": [
+    {
+      "id": "hourly",
+      "alias": "hourly (UTC)",
+      "description": "One data point for each hour in UTC time.",
+      "query": "H",
+      "format": "YYYY-MM-DD\"T\"HH24"
+    },
+    {
+      "id": "local-hourly",
+      "alias": "hourly (Local Time Zone)",
+      "description": "One data point for each hour in local time.",
+      "query": "LH",
+      "format": "YYYY-MM-DD\"T\"HH24TZH"
+    }
+  ],
+  "facets": [
+    {
+      "id": "fromba",
+      "description": "Balancing Authority / Region"
+    },
+    {
+      "id": "toba",
+      "description": "Neighboring Balancing Authority / Region"
+    }
+  ],
+  "data": {
+    "value": {
+      "aggregation-method": "SUM",
+      "alias": "Interchange",
+      "units": "megawatthours"
+    }
+  },
+  "startPeriod": "2015-07-01T05",
+  "endPeriod": "2022-11-04T07",
+  "defaultDateFormat": "YYYY-MM-DD\"T\"HH24",
+  "defaultFrequency": "hourly"
+}

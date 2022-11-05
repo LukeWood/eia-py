@@ -1,0 +1,49 @@
+{
+  "id": "energy-efficiency",
+  "name": "Costs and Savings from Energy Efficiency Programs",
+  "description": "Costs and savings from energy efficiency programs by state and sector\n    Source: Form EIA-861\n    Product: State Electricity Profiles, Table 13",
+  "frequency": [
+    {
+      "id": "annual",
+      "description": "One data point for each calendar year.",
+      "query": "A",
+      "format": "YYYY"
+    }
+  ],
+  "facets": [
+    {
+      "id": "state",
+      "description": "State"
+    },
+    {
+      "id": "timePeriod",
+      "description": "Time Period Included in Costs and Savings"
+    },
+    {
+      "id": "sector",
+      "description": "Sector"
+    }
+  ],
+  "data": {
+    "energy-savings": {
+      "alias": "Annual Energy Savings",
+      "units": "megawatthours"
+    },
+    "potential-peak-savings": {
+      "alias": "Peak Demand Savings",
+      "units": "megawatts"
+    },
+    "customer-incentive": {
+      "alias": "Cost of Customer Incentives",
+      "units": "thousand dollars"
+    },
+    "all-other-costs": {
+      "alias": "All Other Costs",
+      "units": "thousand dollars"
+    }
+  },
+  "startPeriod": 2013,
+  "endPeriod": 2020,
+  "defaultDateFormat": "YYYY",
+  "defaultFrequency": "annual"
+}

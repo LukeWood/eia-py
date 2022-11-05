@@ -1,0 +1,38 @@
+{
+  "id": "daily-region-sub-ba-data",
+  "name": "Daily Demand by Subregion",
+  "description": "Daily demand by balancing authority subregion.  \n    Source: Form EIA-930\n    Product: Hourly Electric Grid Monitor",
+  "frequency": [
+    {
+      "id": "daily",
+      "description": "One data point for each day.",
+      "query": "D",
+      "format": "YYYY-MM-DD"
+    }
+  ],
+  "facets": [
+    {
+      "id": "subba",
+      "description": "Subregion"
+    },
+    {
+      "id": "parent",
+      "description": "Balancing Authority"
+    },
+    {
+      "id": "timezone",
+      "description": "Time Zone for Determining Date"
+    }
+  ],
+  "data": {
+    "value": {
+      "aggregation-method": "SUM",
+      "alias": "Demand",
+      "units": "megawatthours"
+    }
+  },
+  "startPeriod": "2018-06-18",
+  "endPeriod": "2022-11-04",
+  "defaultDateFormat": "YYYY-MM-DD",
+  "defaultFrequency": "daily"
+}
