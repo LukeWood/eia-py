@@ -5,6 +5,7 @@ home = expanduser("~")
 eia_root = f"{home}/data/eia-py"
 eia_root = os.path.abspath(eia_root)
 
+
 def ensure_exists(path):
     """ensure a given path exists
 
@@ -13,6 +14,7 @@ def ensure_exists(path):
     """
     assert isinstance(path, str)
     os.makedirs(path, exist_ok=True)
+
 
 def get_base_dir():
     """returns a base directory for the eia data loader.

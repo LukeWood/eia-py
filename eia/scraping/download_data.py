@@ -8,7 +8,9 @@ import os
 import pandas as pd
 import requests
 import tqdm
+
 import eia
+
 
 def download_data(data_dir=None):
     """downloads the dataset to the specified `data_dir`.
@@ -37,9 +39,7 @@ def download_data(data_dir=None):
         schema_path = os.path.join(data_dir, "schema")
         eia.utils.ensure_exists(schema_path)
 
-        file_path = os.path.join(
-            schema_path, i["id"] + "_schema"
-        )
+        file_path = os.path.join(schema_path, i["id"] + "_schema")
         with open(file_path, "w") as f:
             f.write(json.dumps(resp_schema, indent=2))
 
@@ -53,12 +53,8 @@ def download_data(data_dir=None):
             for j in resp_schema["response"]["data"]:
                 base_str += "&data[]=" + j
             resp = get_response(base_str)
-            json_file_path = os.path.join(
-                data_dir, "data", "json", i["id"] + "_data"
-            )
-            csv_file_path = os.path.join(
-                data_dir, "data", "csv", i["id"] + "_data"
-            )
+            json_file_path = os.path.join(data_dir, "data", "json", i["id"] + "_data")
+            csv_file_path = os.path.join(data_dir, "data", "csv", i["id"] + "_data")
             with open(json_file_path, "w") as f:
                 f.write(json.dumps(resp["response"], indent=2))
                 df = pd.json_normalize(resp["response"]["data"])
@@ -77,13 +73,11 @@ def download_data(data_dir=None):
             )
 
             base_str = "".join([api_base_url, "/", i["id"], "/data?api_key=", api_key])
-            eia.utils.ensure_exists(f'{data_dir}/schema/{k}')
-            eia.utils.ensure_exists(f'{data_dir}/data/{k}/json')
-            eia.utils.ensure_exists(f'{data_dir}/data/{k}/csv')
+            eia.utils.ensure_exists(f"{data_dir}/schema/{k}")
+            eia.utils.ensure_exists(f"{data_dir}/data/{k}/json")
+            eia.utils.ensure_exists(f"{data_dir}/data/{k}/csv")
 
-            file_path = os.path.join(
-                data_dir, "schema", k, i["id"] + "_schema"
-            )
+            file_path = os.path.join(data_dir, "schema", k, i["id"] + "_schema")
             with open(file_path, "w") as f:
                 f.write(json.dumps(resp_schema["response"], indent=2))
 
@@ -94,9 +88,7 @@ def download_data(data_dir=None):
             json_file_path = os.path.join(
                 data_dir, "data", k, "json", i["id"] + "_data"
             )
-            csv_file_path = os.path.join(
-                data_dir, "data", k, "csv", i["id"] + "_data"
-            )
+            csv_file_path = os.path.join(data_dir, "data", k, "csv", i["id"] + "_data")
 
             with open(json_file_path, "w") as f:
                 f.write(json.dumps(resp["response"], indent=2))
