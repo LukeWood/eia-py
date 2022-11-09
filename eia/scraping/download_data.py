@@ -78,6 +78,8 @@ def download_data(data_dir=None):
 
             base_str = "".join([api_base_url, "/", i["id"], "/data?api_key=", api_key])
             eia.utils.ensure_exists(f'{data_dir}/schema/{k}')
+            eia.utils.ensure_exists(f'{data_dir}/data/{k}/json')
+            eia.utils.ensure_exists(f'{data_dir}/data/{k}/csv')
 
             file_path = os.path.join(
                 data_dir, "schema", k, i["id"] + "_schema"
