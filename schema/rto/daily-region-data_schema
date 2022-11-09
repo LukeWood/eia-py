@@ -1,0 +1,38 @@
+{
+  "id": "daily-region-data",
+  "name": "Daily Demand, Demand Forecast, Generation, and Interchange",
+  "description": "Daily demand, day-ahead demand forecast, net generation, and interchange by balancing authority.  \n    Source: Form EIA-930\n    Product: Hourly Electric Grid Monitor",
+  "frequency": [
+    {
+      "id": "daily",
+      "description": "One data point for each day.",
+      "query": "D",
+      "format": "YYYY-MM-DD"
+    }
+  ],
+  "facets": [
+    {
+      "id": "respondent",
+      "description": "Balancing Authority / Region"
+    },
+    {
+      "id": "type",
+      "description": "Metric"
+    },
+    {
+      "id": "timezone",
+      "description": "Time Zone for Determining Date"
+    }
+  ],
+  "data": {
+    "value": {
+      "aggregation-method": "SUM",
+      "alias": "Demand, Demand Forecast, Net Generation, or Interchange",
+      "units": "megawatthours"
+    }
+  },
+  "startPeriod": "2015-06-30",
+  "endPeriod": "2022-11-09",
+  "defaultDateFormat": "YYYY-MM-DD",
+  "defaultFrequency": "daily"
+}

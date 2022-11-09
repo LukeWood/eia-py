@@ -1,0 +1,37 @@
+{
+  "id": "meters",
+  "name": "Advanced Metering Infrastructure",
+  "description": "Advanced meterting counts by technology, state, and sector\n    Source: Forms EIA-861, EIA-861S\n    Product: State Electricity Profiles, Table 12",
+  "frequency": [
+    {
+      "id": "annual",
+      "description": "One data point for each calendar year.",
+      "query": "A",
+      "format": "YYYY"
+    }
+  ],
+  "facets": [
+    {
+      "id": "state",
+      "description": "State"
+    },
+    {
+      "id": "technology",
+      "description": "Meter Technology"
+    },
+    {
+      "id": "sector",
+      "description": "sector"
+    }
+  ],
+  "data": {
+    "meters": {
+      "alias": "Meter Count",
+      "units": "number of meters"
+    }
+  },
+  "startPeriod": 2013,
+  "endPeriod": 2020,
+  "defaultDateFormat": "YYYY",
+  "defaultFrequency": "annual"
+}

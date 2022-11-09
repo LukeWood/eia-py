@@ -1,0 +1,37 @@
+{
+  "id": "capability",
+  "name": "Generating Capacity",
+  "description": "Electric generating capacity (summer capacity) by state, energy source, and sector.\n    Source: Form EIA-860\n    Product: State Electricity Profiles, Table 4",
+  "frequency": [
+    {
+      "id": "annual",
+      "description": "One data point for each calendar year.",
+      "query": "A",
+      "format": "YYYY"
+    }
+  ],
+  "facets": [
+    {
+      "id": "stateId",
+      "description": "State"
+    },
+    {
+      "id": "producertypeid",
+      "description": "Sector"
+    },
+    {
+      "id": "energysourceid",
+      "description": "Energy Source"
+    }
+  ],
+  "data": {
+    "capability": {
+      "alias": "Net Summer Capacity ",
+      "units": "megawatts"
+    }
+  },
+  "startPeriod": 1990,
+  "endPeriod": 2020,
+  "defaultDateFormat": "YYYY",
+  "defaultFrequency": "annual"
+}

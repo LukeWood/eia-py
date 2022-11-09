@@ -1,0 +1,40 @@
+{
+  "id": "net-metering",
+  "name": "Electricity Net Metering: Customers and Capacity",
+  "description": "Electricity net metering customer counts and capacity by state, sector, and generating technology.\n    Source: Form EIA-861\n    Product: State Electricity Profiles, Table 11",
+  "frequency": [
+    {
+      "id": "annual",
+      "description": "One data point for each calendar year.",
+      "query": "A",
+      "format": "YYYY"
+    }
+  ],
+  "facets": [
+    {
+      "id": "state",
+      "description": "state"
+    },
+    {
+      "id": "technology",
+      "description": "Technology used to Generate Electricity"
+    },
+    {
+      "id": "sector",
+      "description": "sector"
+    }
+  ],
+  "data": {
+    "capacity": {
+      "units": "megawatts"
+    },
+    "customers": {
+      "alias": "Customer Count",
+      "units": "number of customers"
+    }
+  },
+  "startPeriod": 2013,
+  "endPeriod": 2020,
+  "defaultDateFormat": "YYYY",
+  "defaultFrequency": "annual"
+}
