@@ -1,0 +1,51 @@
+{
+  "response": {
+    "id": "state-electricity-profiles",
+    "name": "State Specific Data",
+    "description": "State Specific Data",
+    "routes": [
+      {
+        "id": "emissions-by-state-by-fuel",
+        "name": "Emissions from Energy Consumption at Conventional Power Plants and Combined-Heat-and-Power Plants",
+        "description": "Emissions from electricity generation and the production of useful thermal output at conventional power plants and combined-heat-and-power plants.\n    See Electric Power Annual, Technical Notes for a description of the sources and methodology used to develop the emissions estimates.\n    Sources: Forms EIA-860, EIA-923, and calculations made by the Office of  Energy Production, Conversion & Delivery (EPCD)\n    Product: State Electricity Profiles, Table 7"
+      },
+      {
+        "id": "source-disposition",
+        "name": " Supply and disposition of electricity",
+        "description": "Supply and disposition of electricity by state.\n    Sources: Forms EIA-860, EIA-861, and EIA-923\n    Product: State Electricity Profiles, Table 10"
+      },
+      {
+        "id": "capability",
+        "name": "Generating Capacity",
+        "description": "Electric generating capacity (summer capacity) by state, energy source, and sector.\n    Source: Form EIA-860\n    Product: State Electricity Profiles, Table 4"
+      },
+      {
+        "id": "energy-efficiency",
+        "name": "Costs and Savings from Energy Efficiency Programs",
+        "description": "Costs and savings from energy efficiency programs by state and sector\n    Source: Form EIA-861\n    Product: State Electricity Profiles, Table 13"
+      },
+      {
+        "id": "net-metering",
+        "name": "Electricity Net Metering: Customers and Capacity",
+        "description": "Electricity net metering customer counts and capacity by state, sector, and generating technology.\n    Source: Form EIA-861\n    Product: State Electricity Profiles, Table 11"
+      },
+      {
+        "id": "meters",
+        "name": "Advanced Metering Infrastructure",
+        "description": "Advanced meterting counts by technology, state, and sector\n    Source: Forms EIA-861, EIA-861S\n    Product: State Electricity Profiles, Table 12"
+      },
+      {
+        "id": "summary",
+        "name": "State Rankings for Key Statistics",
+        "description": "State rankings for key electricity statistics by state\n    Source: Forms EIA-860, EIA-861, EIA-923\n    Product: State Electricity Profiles, Table 1"
+      }
+    ]
+  },
+  "request": {
+    "command": "/v2/electricity/state-electricity-profiles/",
+    "params": {
+      "api_key": "so1nmwhPARGb1MW1FFZLADVX1oeYYBK95gJkJCxQ"
+    }
+  },
+  "apiVersion": "2.0.4"
+}

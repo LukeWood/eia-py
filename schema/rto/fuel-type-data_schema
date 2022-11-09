@@ -1,0 +1,42 @@
+{
+  "id": "fuel-type-data",
+  "name": "Hourly Generation by Energy Source",
+  "description": "Hourly net generation by balancing authority and energy source.  \n    Source: Form EIA-930\n    Product: Hourly Electric Grid Monitor",
+  "frequency": [
+    {
+      "id": "hourly",
+      "alias": "hourly (UTC)",
+      "description": "One data point for each hour in UTC time.",
+      "query": "H",
+      "format": "YYYY-MM-DD\"T\"HH24"
+    },
+    {
+      "id": "local-hourly",
+      "alias": "hourly (Local Time Zone)",
+      "description": "One data point for each hour in local time.",
+      "query": "LH",
+      "format": "YYYY-MM-DD\"T\"HH24TZH"
+    }
+  ],
+  "facets": [
+    {
+      "id": "respondent",
+      "description": "Balancing Authority / Region"
+    },
+    {
+      "id": "fueltype",
+      "description": "Energy Source"
+    }
+  ],
+  "data": {
+    "value": {
+      "aggregation-method": "SUM",
+      "alias": "Net Generation",
+      "units": "megawatthours"
+    }
+  },
+  "startPeriod": "2018-07-01T05",
+  "endPeriod": "2022-11-09T08",
+  "defaultDateFormat": "YYYY-MM-DD\"T\"HH24",
+  "defaultFrequency": "hourly"
+}
