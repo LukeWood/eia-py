@@ -51,7 +51,10 @@ def download_data(data_dir=None):
         if i["id"] != "state-electricity-profiles" and i["id"] != "rto":
 
             for j in resp_schema["response"]["data"]:
-                base_str += "&data[]=" + j
+                base_str = "".join([base_str, "&data[]=", j])
+            base_str = "".join(
+                [base_str, "&end=", resp_schema["response"]["endPeriod"]]
+            )
             resp = get_response(base_str)
             json_file_path = os.path.join(data_dir, "data", "json", i["id"] + "_data")
             csv_file_path = os.path.join(data_dir, "data", "csv", i["id"] + "_data")
@@ -83,7 +86,10 @@ def download_data(data_dir=None):
 
             for j in resp_schema["response"]["data"]:
                 base_str = "".join([base_str, "&data[]=", j])
-
+            base_str = "".join(
+                [base_str, "&end=", str(resp_schema["response"]["endPeriod"])]
+            )
+            print(base_str)
             resp = get_response(base_str)
             json_file_path = os.path.join(
                 data_dir, "data", k, "json", i["id"] + "_data"

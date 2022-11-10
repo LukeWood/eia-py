@@ -21,7 +21,7 @@ def get_base_dir():
 
     This path follows the format: `~/data/eia-py`.
     If this directory does not exist, this method creates
-    the code.
+    the directory.
     """
     ensure_exists(eia_root)
     return eia_root
