@@ -4,6 +4,7 @@
 
 import json
 import os
+import re
 
 import pandas as pd
 import requests
@@ -87,9 +88,14 @@ def download_data(data_dir=None):
             for j in resp_schema["response"]["data"]:
                 base_str = "".join([base_str, "&data[]=", j])
             base_str = "".join(
-                [base_str, "&end=", str(resp_schema["response"]["endPeriod"])]
+                [
+                    base_str,
+                    "&end=",
+                    str(resp_schema["response"]["endPeriod"]),
+                    "&sort[0][column]=period&sort[0][direction]=desc",
+                ]
             )
-            print(base_str)
+
             resp = get_response(base_str)
             json_file_path = os.path.join(
                 data_dir, "data", k, "json", i["id"] + "_data"
@@ -100,6 +106,26 @@ def download_data(data_dir=None):
                 f.write(json.dumps(resp["response"], indent=2))
                 df = pd.json_normalize(resp["response"]["data"])
                 df.to_csv("".join([csv_file_path, ".csv"]))
+            max_val = resp["response"]["total"]
+            if max_val > 50000:
+                max_val = 50000
+            base_str = "".join([base_str, "&offset=", str(0)])
+            for offset_val in range(5000, max_val, 5000):
+                base_str = re.sub(
+                    "&offset=[0-9]*", "&offset=" + str(offset_val), base_str
+                )
+                resp = get_response(base_str)
+                json_file_path = os.path.join(
+                    data_dir, "data", k, "json", i["id"] + "_data"
+                )
+                csv_file_path = os.path.join(
+                    data_dir, "data", k, "csv", i["id"] + "_data"
+                )
+
+                with open(json_file_path, "a") as f:
+                    f.write(json.dumps(resp["response"], indent=2))
+                    df = pd.json_normalize(resp["response"]["data"])
+                    df.to_csv("".join([csv_file_path, ".csv"]), mode="a")
 
 
 def get_response(base_url, api_key=""):
