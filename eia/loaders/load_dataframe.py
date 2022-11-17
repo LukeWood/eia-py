@@ -46,7 +46,6 @@ def load_dataframe(data, download_data=None, data_dir=None):
     data_dir = data_dir or eia.utils.get_base_dir()
     path = mapping[data]
     path = f"{data_dir}/data/{path}"
-    print(path)
     if download_data:
         eia.scraping.download_data(data_dir=data_dir)
     if download_data is None and not os.path.exists(path):
