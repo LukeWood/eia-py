@@ -6,4 +6,4 @@ To view:
 python -m http.server
 ```
 
-Then visit `localhost:8000`
+Then visit `http://localhost:8000`
