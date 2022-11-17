@@ -5,3 +5,5 @@ To view:
 ```
 python -m http.server
 ```
+
+Then visit `localhost:8000`
