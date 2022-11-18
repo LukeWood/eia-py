@@ -11,7 +11,7 @@ mapping = {
     "retail-sales": "csv/retail-sales_data.csv",
     "rto-daily-fuel-type-data": "rto/csv/daily-fuel-type-data_data.csv",
     "rto-daily-interchange-data": "rto/csv/daily-interchange-data_data.csv",
-    "rto-daily-region-data": "rto/csv/rto-daily-region-data_data.csv",
+    "rto-daily-region-data": "rto/csv/daily-region-data_data.csv",
     "rto-daily-region-sub-ba-data": "rto/csv/daily-region-sub-ba-data_data.csv",
     "rto-fuel-type-data": "rto/csv/fuel-type-data_data.csv",
     "rto-interchange-data": "rto/csv/interchange-data_data.csv",
