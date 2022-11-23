@@ -30,4 +30,4 @@ html_static_path = ['_static']
 extensions = ['sphinx.ext.napoleon',
     "myst_parser",
 
- 'sphinx_rtd_theme']
+ 'sphinx_rtd_theme', 'sphinx_automodapi.automodapi']

@@ -42,7 +42,8 @@ setup(
             "twine",
             "wheel",
             "sphinx-rtd-theme",
-            "myst-parser"
+            "myst-parser",
+            "sphinx-automodapi"
         ],
     },
     classifiers=[

@@ -1,7 +1,8 @@
-eia-py's homepage documentation!
+eia-py's API documentation!
 ======================================
 
 .. include:: ../README.md
    :parser: myst_parser.sphinx_
 
-.. automodapi:: eia
+.. automodule:: eia
+  :members:

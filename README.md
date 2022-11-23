@@ -8,8 +8,8 @@ Our repository consists of two major components: a package `eia-py` and a set of
 exploratory data analysis notebooks (EDA).
 
 The package can be found under `eia`.  The package handles data scraping and loading.
-The `eda` directory holds all tools required to perform exploratory data analysis.  The
-relationship between the two is that the scripts and notebooks in `eda` rely on the
+The `notebooks/` directory holds all tools required to perform exploratory data analysis.  The
+relationship between the two is that the scripts and notebooks in `notebooks/` rely on the
 package in `eia`.
 
 ## Links
