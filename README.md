@@ -12,13 +12,28 @@ The `eda` directory holds all tools required to perform exploratory data analysi
 relationship between the two is that the scripts and notebooks in `eda` rely on the
 package in `eia`.
 
-## Plan of Action
+## Quickstart
 
-- write methods to scrape data from the API and serialize
-- write github action to automate this
-- write way to load data to numpy array/pandas
+The easiest way to get started is to install from PyPi:
 
-## Development Setup
+```
+pip install eia-py-api
+```
+
+Next you'll need to export an API key in your environment variables:
+
+```
+export EIA_API_KEY="{your-key}"
+```
+
+You can get an API key from [the EIA website](https://www.eia.gov/opendata/).
+
+
+## Contributing
+
+Contribute to the [eia-py](https://github.com/lukewood/eia-py) GitHub repo.
+
+### Development Setup
 
 To get started working on the repository, please clone the repo:
 

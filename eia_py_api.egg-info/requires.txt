@@ -1,0 +1,10 @@
+
+[dev]
+flake8
+black
+isort
+pytest
+pytype
+setuptools
+twine
+wheel
