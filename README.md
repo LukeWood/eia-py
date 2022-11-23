@@ -1,4 +1,4 @@
-![](media/logo.png)
+![](https://raw.githubusercontent.com/LukeWood/eia-py/master/media/logo.png?token=GHSAT0AAAAAABNFEWNO7NHME3ULKXK3SEEUY36XLVA)
 
 _Python bindings for the Energy Information Administration API_
 
@@ -11,6 +11,13 @@ The package can be found under `eia`.  The package handles data scraping and loa
 The `eda` directory holds all tools required to perform exploratory data analysis.  The
 relationship between the two is that the scripts and notebooks in `eda` rely on the
 package in `eia`.
+
+## Links
+
+- [GitHub repo](https://github.com/lukewood/eia-py)
+- [API Docs](https://lukewood.github.io/eia-py)
+- [Data Understanding Dashboard](https://lukewood.github.io/eia-py/dashboard)
+- [Per-Dataset Data Analysis](https://lukewood.github.io/eia-py/auto-reports)
 
 ## Quickstart
 
@@ -28,6 +35,9 @@ export EIA_API_KEY="{your-key}"
 
 You can get an API key from [the EIA website](https://www.eia.gov/opendata/).
 
+## Examples
+
+For examples, please check out our [notebooks directory](https://github.com/LukeWood/eia-py/tree/master/notebooks).
 
 ## Contributing
 
