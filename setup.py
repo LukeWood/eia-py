@@ -43,7 +43,7 @@ setup(
             "wheel",
             "sphinx-rtd-theme",
             "myst-parser",
-            "sphinx-automodapi"
+            "sphinx-automodapi",
         ],
     },
     classifiers=[
