@@ -21,7 +21,7 @@ def get_version(rel_path):
 
 
 setup(
-    name="eia-py",
+    name="eia-py-api",
     version=get_version("eia/__init__.py"),
     description="",
     long_description=read("README.md"),
@@ -41,6 +41,9 @@ setup(
             "setuptools",
             "twine",
             "wheel",
+            "sphinx-rtd-theme",
+            "myst-parser",
+            "sphinx-automodapi"
         ],
     },
     classifiers=[
