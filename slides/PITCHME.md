@@ -127,19 +127,85 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 ---
 
-
 # Green Score Over Time
 ![bg left contain](img/greenscore.png)
 
+# TODO ADD PLOT LINK
 [Link to the live plot on the dashboard]()
 
 ---
 
-# Trend
 
-_The Green Score has been improving over the years_
+# Trend!
+
+_The Green Score has been improving over the years!_
 
 - Decision makers are pushing towards more greener sources of energy
 - This essentially could be due to improved power generation techniques
 
 ---
+
+"Good Job Everyone!!!"
+![bg left contain](img/good-job-2.png)
+
+---
+
+# ...
+
+---
+
+![bg contain](img/bad-texas.png)
+
+---
+
+# Except Texas
+
+![bg left contain](img/except-texas.png)
+
+---
+
+![bg contain](img/good-job-texas.png)
+
+---
+
+"Good Job Texas!!!"
+![bg left contain](img/good-job-2.png)
+
+---
+
+# SO2 Score
+
+- SO2 is a secondary pollutant
+- Separated for the primary score
+- Scalar between 0 (Best) and 5 (Poor)
+- SO2 emission during electricity generation.
+- Again is normalised per unit of electricity generation
+
+---
+
+
+# Best 7 States
+
+![bg left contain](img/so2-best.png)
+
+---
+
+# Worst 7 States
+
+![bg left contain](img/sod2-worst.png)
+
+---
+
+# Green Score Over Time
+![bg left contain](img/so2-plot.png)
+
+# TODO ADD PLOT LINK
+[Link to the live plot on the dashboard]()
+
+---
+
+## Trend
+
+_The SO2 score has been getting better over the years._
+
+ This could be due to using fuel sources with lower Sulphur content.
