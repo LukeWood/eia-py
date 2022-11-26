@@ -183,7 +183,6 @@ _The Green Score has been improving over the years!_
 
 ---
 
-
 # Best 7 States
 
 ![bg left contain](img/so2-best.png)
@@ -192,11 +191,11 @@ _The Green Score has been improving over the years!_
 
 # Worst 7 States
 
-![bg left contain](img/sod2-worst.png)
+![bg left contain](img/so2-worst.png)
 
 ---
 
-# Green Score Over Time
+# SO2 Score Over Time
 ![bg left contain](img/so2-plot.png)
 
 # TODO ADD PLOT LINK
@@ -209,3 +208,55 @@ _The Green Score has been improving over the years!_
 _The SO2 score has been getting better over the years._
 
  This could be due to using fuel sources with lower Sulphur content.
+
+---
+
+![bg contain](img/fuels-by-time.png)
+
+<!--
+
+- This plot shows the electricity generated from some of the major sources such as Coal, Natural Gas, Wind, etc
+
+- Trend: The amount of coal used in electricity generation has been steadily decreasing since 2010.
+
+- Natural Gas has been increasing and so are renewable sources such as wind, solar, etc.
+
+- This is probably one of the reasons why the green score and SO2 scores have been improving over the years.
+
+-->
+
+---
+
+### Self Sufficiency Index
+
+- TODO write description
+
+---
+
+# Best 7 States
+
+![bg left contain](img/self-sufficiency-best.png)
+
+---
+
+# Worst 7 States
+
+![bg left contain](img/self-sufficiency-worst.png)
+
+---
+
+# Self Sufficiency Index Over Time
+![bg left contain](img/self-sufficiency.png)
+
+# TODO ADD PLOT LINK
+[Link to the live plot on the dashboard]()s
+
+<!--
+
+- This plot shows the self sufficiency index which is a measure of energy independence of each state.
+
+- Trend: A self sufficiency index of around 1 indicates that a state consumes what it produces and could be self sufficient.
+
+- Many states fall under this category.
+
+-->
