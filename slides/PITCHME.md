@@ -7,7 +7,7 @@ paginate: true
 _paginate: false
 ---
 
-![bg cover](img/panel-1.png)
+![bg cover](assets/img/panel-1.png)
 
 <style scoped>
 h2, p {
@@ -52,7 +52,7 @@ Analysis and forecasting of Electricity Information Administration Electricity D
 
 ## Forecast electricity demand
 
-![bg right](img/forecast.png)
+![bg right](assets/img/forecast.png)
 
 ---
 
@@ -75,17 +75,17 @@ dataframe = eia.load_dataframe()
 
 ---
 
-![bg contain](img/using-the-code.png)
+![bg contain](assets/img/using-the-code.png)
 
 ---
 
 More information available in [the GitHub repo README](https://github.com/lukewood/eia-py)
 
-![width:700px](img/quickstart.png)
+![width:700px](assets/img/quickstart.png)
 
 ---
 
-![bg contain](img/overview.jpg)
+![bg contain](assets/img/overview.jpg)
 
 <!--
 - The energy information authority exposes all the data it collects via an API. To access this API we need to request for a key.
@@ -101,7 +101,7 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 # Data Anaysis
 
-![bg right contain](img/line-chart.png)
+![bg right contain](assets/img/line-chart.png)
 
 ---
 
@@ -117,18 +117,18 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 # Best 7 States
 
-![bg left contain](img/best-7.png)
+![bg left contain](assets/img/best-7.png)
 
 ---
 
 # Worst 7 States
 
-![bg left contain](img/worst-7.png)
+![bg left contain](assets/img/worst-7.png)
 
 ---
 
 # Green Score Over Time
-![bg left contain](img/greenscore.png)
+![bg left contain](assets/img/greenscore.png)
 
 # TODO ADD PLOT LINK
 [Link to the live plot on the dashboard]()
@@ -146,7 +146,7 @@ _The Green Score has been improving over the years!_
 ---
 
 "Good Job Everyone!!!"
-![bg left contain](img/good-job-2.png)
+![bg left contain](assets/img/good-job-2.png)
 
 ---
 
@@ -154,22 +154,22 @@ _The Green Score has been improving over the years!_
 
 ---
 
-![bg contain](img/bad-texas.png)
+![bg contain](assets/img/bad-texas.png)
 
 ---
 
 # Except Texas
 
-![bg left contain](img/except-texas.png)
+![bg left contain](assets/img/except-texas.png)
 
 ---
 
-![bg contain](img/good-job-texas.png)
+![bg contain](assets/img/good-job-texas.png)
 
 ---
 
 "Good Job Texas!!!"
-![bg left contain](img/good-job-2.png)
+![bg left contain](assets/img/good-job-2.png)
 
 ---
 
@@ -185,18 +185,18 @@ _The Green Score has been improving over the years!_
 
 # Best 7 States
 
-![bg left contain](img/so2-best.png)
+![bg left contain](assets/img/so2-best.png)
 
 ---
 
 # Worst 7 States
 
-![bg left contain](img/so2-worst.png)
+![bg left contain](assets/img/so2-worst.png)
 
 ---
 
 # SO2 Score Over Time
-![bg left contain](img/so2-plot.png)
+![bg left contain](assets/img/so2-plot.png)
 
 # TODO ADD PLOT LINK
 [Link to the live plot on the dashboard]()
@@ -211,7 +211,7 @@ _The SO2 score has been getting better over the years._
 
 ---
 
-![bg contain](img/fuels-by-time.png)
+![bg contain](assets/img/fuels-by-time.png)
 
 <!--
 
@@ -235,18 +235,18 @@ _The SO2 score has been getting better over the years._
 
 # Best 7 States
 
-![bg left contain](img/self-sufficiency-best.png)
+![bg left contain](assets/img/self-sufficiency-best.png)
 
 ---
 
 # Worst 7 States
 
-![bg left contain](img/self-sufficiency-worst.png)
+![bg left contain](assets/img/self-sufficiency-worst.png)
 
 ---
 
 # Self Sufficiency Index Over Time
-![bg left contain](img/self-sufficiency.png)
+![bg left contain](assets/img/self-sufficiency.png)
 
 # TODO ADD PLOT LINK
 [Link to the live plot on the dashboard]()s
