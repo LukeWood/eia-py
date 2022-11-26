@@ -1,0 +1,4 @@
+# slides
+
+Our slides are rendered using Marp/Marp-CLI.
+This allows us to export our slides to a website, html page, and pdf.
