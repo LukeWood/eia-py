@@ -16,7 +16,7 @@ Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Description-Content-Type: text/markdown
 Provides-Extra: dev
 
-![](media/logo.png)
+![](https://raw.githubusercontent.com/LukeWood/eia-py/master/media/logo.png?token=GHSAT0AAAAAABNFEWNO7NHME3ULKXK3SEEUY36XLVA)
 
 _Python bindings for the Energy Information Administration API_
 
@@ -26,17 +26,42 @@ Our repository consists of two major components: a package `eia-py` and a set of
 exploratory data analysis notebooks (EDA).
 
 The package can be found under `eia`.  The package handles data scraping and loading.
-The `eda` directory holds all tools required to perform exploratory data analysis.  The
-relationship between the two is that the scripts and notebooks in `eda` rely on the
+The `notebooks/` directory holds all tools required to perform exploratory data analysis.  The
+relationship between the two is that the scripts and notebooks in `notebooks/` rely on the
 package in `eia`.
 
-## Plan of Action
+## Links
 
-- write methods to scrape data from the API and serialize
-- write github action to automate this
-- write way to load data to numpy array/pandas
+- [GitHub repo](https://github.com/lukewood/eia-py)
+- [API Docs](https://lukewood.github.io/eia-py)
+- [Data Understanding Dashboard](https://lukewood.github.io/eia-py/dashboard)
+- [Per-Dataset Data Analysis](https://lukewood.github.io/eia-py/auto-reports)
 
-## Development Setup
+## Quickstart
+
+The easiest way to get started is to install from PyPi:
+
+```
+pip install eia-py-api
+```
+
+Next you'll need to export an API key in your environment variables:
+
+```
+export EIA_API_KEY="{your-key}"
+```
+
+You can get an API key from [the EIA website](https://www.eia.gov/opendata/).
+
+## Examples
+
+For examples, please check out our [notebooks directory](https://github.com/LukeWood/eia-py/tree/master/notebooks).
+
+## Contributing
+
+Contribute to the [eia-py](https://github.com/lukewood/eia-py) GitHub repo.
+
+### Development Setup
 
 To get started working on the repository, please clone the repo:
 
