@@ -3,17 +3,61 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-   <title>1st Analysis</title>
-         <link rel="shortcut icon" type="image/jpg" href="python-logo.png"/>
+   <title> EIA Data Analysis Dashboard </title>
       </head>
     <body>
         <h1 align="center"> EIA Data Analysis </h1> 
-        <h2 align="center"> State Electricity Profiles </h2> 
-
+        <h2 align="center"> State Electricity Profiles </h2> </br></br>
+        <P> &nbsp; &nbsp; &nbsp; The following datasets have been analysed here:
+            <ul>
+              <li>state-electricity-profiles-emissions-by-state-by-fuel </li>
+              <li>state-electricity-profiles-source-disposition </li>
+              <li> state-electricity-profiles-capability </li>
+              <li>  state-electricity-profiles-source-disposition </li>
+              <li> state-electricity-profiles-summary </li> </ul> </P>
+                
+                <h3 align="center"> Green Score  </h3>
+                </br> <p align="Center"> This score is a value between 0 (Poor) and 5 (Best) and measures the environmental impact of electricity generation. Green score takes into consideration the primary contributors to global warming [NOx and CO2]. This score scales NOx to CO2 equivalent and normalises the value to per unit of electricity generation. </p>
                 <iframe src="Green_Score_Map.html" width="100%" height="500">  </iframe>
+                <h4 align="Left"> &nbsp; &nbsp; &nbsp; Inference </h4>
+                <p> &nbsp; &nbsp; &nbsp; The Green Score has been improving over the years, meaning decision makers are pushing more towards greener sources of energy. This essentially could be due to improved power generation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; techniques. </p> </br>
+                
+                <h3 align="center"> SO2 Score  </h3>
+                </br> <p align ="center"> This score is a value between 0 (Best) and 5 (Poor) and measures the amount of SO2 emission during electricity generation. This again is normalised per unit of electricity generation. </p>
                 <iframe src="SO2_Score_Map.html" width="100%" height="500">  </iframe>
+                <h4 align="Left"> &nbsp; &nbsp; &nbsp; Inference </h4>
+                <p> &nbsp; &nbsp; &nbsp; The SO2 score has been getting better over the years. This could be due to using fuel sources with lower Sulphur content. </p> </br>
+
+                <h3 align="center"> Independent Power Producer Ratio  </h3>
+                </br> 
                 <iframe src="IPP.html" width="100%" height="500">  </iframe>
-                <iframe src="GS.html" width="100%" height="500">  </iframe>
+                <h4 align="Left"> &nbsp; &nbsp; &nbsp; Inference </h4>
+                <p> &nbsp; &nbsp; &nbsp;The share of private power producers has been increasing over the years and is now almost 40% of the total electricity production in the US.</p> </br>
+
+                <h3 align="center"> Capability Plot  </h3>
+                </br> <p align ="center"></p>
                 <iframe src="capability.html" width="100%" height="500">  </iframe>
+                <h4 align="Center"> Inference </h4>
+                <p align ="center"> This plot shows the electricity generated from some of the major sources such as Coal, Natural Gas, Wind, etc. The amount of coal used in electricity generation has been steadily decreasing since 2010. Natural Gas has been increasing and so are renewable sources such as wind, solar, etc. This is probably one of the reasons why the green score and SO2 scores have been improving over the years. </p> </br>
+
+                <h3 align="center"> Net Generation </h3>
+                </br> <p align ="center"></p>
+                <iframe src="net-generation.html" width="100%" height="500">  </iframe>
+                <h4 align="Left"> &nbsp; &nbsp; &nbsp; Inference </h4>
+                <p> &nbsp; &nbsp; &nbsp; The plot shows the total retail sales in various states over the years. This value has been increasing over the years</p> </br>
+
+                <h3 align="center"> Total Retail Sales  </h3>
+                </br> <p align ="center"> </p>
+                <iframe src="total-retail-sales.html" width="100%" height="500">  </iframe>
+                <h4 align="Left"> &nbsp; &nbsp; &nbsp; Inference </h4>
+                <p> &nbsp; &nbsp; &nbsp; The plot shows the net generation in various states over the years. This value has been increasing over the years </p> </br>
+
+                <h3 align="center"> Self Sufficiency Index  </h3>
+                </br> <p align ="center"></p>
+                <iframe src="Self_Sufficiency_Index.html" width="100%" height="500">  </iframe>
+                <h4 align ="center"> Inference </h4>
+                <p align ="center"> This plot shows the self sufficiency index which is a measure of energy independence of each state. A self sufficiency index of around 1 indicates that a state consumes what it produces and could be self sufficient. Many states fall under this category. </p> </br>
+
+
     </body>
 </html>
