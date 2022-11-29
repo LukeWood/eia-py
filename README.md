@@ -1,5 +1,7 @@
 ![](https://raw.githubusercontent.com/LukeWood/eia-py/master/media/logo.png?token=GHSAT0AAAAAABNFEWNO7NHME3ULKXK3SEEUY36XLVA)
 
+[Check out our live data understanding dashboard!](https://lukewood.github.io/eia-py/dashboard/)
+
 _Python bindings for the Energy Information Administration API_
 
 ## Repo Overview
