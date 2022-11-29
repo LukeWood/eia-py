@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/LukeWood/eia-py/master/media/logo.png?token=GHSAT0AAAAAABNFEWNO7NHME3ULKXK3SEEUY36XLVA)
+![](media/logo.png)
 
 [Check out our live data understanding dashboard!](https://lukewood.github.io/eia-py/dashboard/)
 
