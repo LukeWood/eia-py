@@ -99,9 +99,7 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 ---
 
-# Data Anaysis
-
----
+# Data Analysis
 
 ![bg right contain](assets/img/line-chart.png)
 
