@@ -20,6 +20,8 @@ The `docs/` directory contains the files needed for the dashboard and API docume
 
 The `slides/` directory contains the slides which were used for the presentation.
 
+The `schema/` directory contains the API Schema details.
+
 ## Links
 
 - [GitHub repo](https://github.com/lukewood/eia-py)
