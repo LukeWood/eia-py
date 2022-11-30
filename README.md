@@ -16,6 +16,10 @@ The `notebooks/` directory holds all tools required to perform exploratory data 
 relationship between the two is that the scripts and notebooks in `notebooks/` rely on the
 package in `eia`.
 
+The `docs/` directory contains the files needed for the dashboard and API documentation page. 
+
+The `slides/` directory contains the slides which were used for the presentation.
+
 ## Links
 
 - [GitHub repo](https://github.com/lukewood/eia-py)
