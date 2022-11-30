@@ -2,6 +2,8 @@
 
 [Check out our live data understanding dashboard!](https://lukewood.github.io/eia-py/dashboard/)
 
+[Check out the presentation slides](https://lukewood.github.io/eia-py/slides/)
+
 _Python bindings for the Energy Information Administration API_
 
 ## Repo Overview
