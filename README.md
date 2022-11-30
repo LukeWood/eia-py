@@ -30,6 +30,25 @@ The `schema/` directory contains the API Schema details.
 - [Per-Dataset Data Analysis](https://lukewood.github.io/eia-py/auto-reports)
 - [Presentation Slide Deck](https://lukewood.github.io/eia-py/slides)
 
+## Third Part Modules
+
+
+- os
+- re
+- collections
+- pandas
+- numpy
+- pandas_profiling
+- json
+- requests
+- tqdm
+- plotly
+- matplotlib
+- statsmodels
+- prophet
+- sklearn
+- warnings
+
 ## Quickstart
 
 The easiest way to get started is to install from PyPi:
