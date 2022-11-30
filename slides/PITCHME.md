@@ -101,6 +101,8 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 # Data Anaysis
 
+---
+
 ![bg right contain](assets/img/line-chart.png)
 
 ---
@@ -115,26 +117,24 @@ More information available in [the GitHub repo README](https://github.com/lukewo
 
 ---
 
-# Best 7 States
+## Best 7 States
 
 ![bg left contain](assets/img/best-7.png)
 
 ---
 
-# Worst 7 States
+## Worst 7 States
 
 ![bg left contain](assets/img/worst-7.png)
 
 ---
 
-# Green Score Over Time
+## Green Score Over Time
 ![bg left contain](assets/img/greenscore.png)
 
-# TODO ADD PLOT LINK
-[Link to the live plot on the dashboard]()
+[Link to the live plot on the dashboard](https://lukewood.github.io/eia-py/dashboard/Green_Score_Map.html)
 
 ---
-
 
 # Trend!
 
@@ -173,6 +173,12 @@ _The Green Score has been improving over the years!_
 
 ---
 
+![bg left contain](assets/img/by-source.png)
+
+[Live Plot](https://lukewood.github.io/eia-py/dashboard/energy_consumption_by_source.html)
+
+---
+
 # SO2 Score
 
 - SO2 is a secondary pollutant
@@ -183,23 +189,22 @@ _The Green Score has been improving over the years!_
 
 ---
 
-# Best 7 States
+## Best 7 States
 
 ![bg left contain](assets/img/so2-best.png)
 
 ---
 
-# Worst 7 States
+## Worst 7 States
 
 ![bg left contain](assets/img/so2-worst.png)
 
 ---
 
-# SO2 Score Over Time
+### SO2 Score Over Time
 ![bg left contain](assets/img/so2-plot.png)
 
-# TODO ADD PLOT LINK
-[Link to the live plot on the dashboard]()
+[Link to the live plot on the dashboard](https://lukewood.github.io/eia-py/dashboard/SO2_Score_Map.html)
 
 ---
 
@@ -229,27 +234,32 @@ _The SO2 score has been getting better over the years._
 
 ### Self Sufficiency Index
 
-- TODO write description
+- a measure of energy independence of each state
+- index of around 1 indicates that a statecould be self sufficient
+- many states fall under this category
+
+<!--
+This plot shows the self sufficiency index which is a measure of energy independence of each state. A self sufficiency index of around 1 indicates that a state consumes what it produces and could be self sufficient. Many states fall under this category.
+-->
 
 ---
 
-# Best 7 States
+## Best 7 States
 
 ![bg left contain](assets/img/self-sufficiency-best.png)
 
 ---
 
-# Worst 7 States
+## Worst 7 States
 
 ![bg left contain](assets/img/self-sufficiency-worst.png)
 
 ---
 
-# Self Sufficiency Index Over Time
+### Self Sufficiency Index Over Time
 ![bg left contain](assets/img/self-sufficiency.png)
 
-# TODO ADD PLOT LINK
-[Link to the live plot on the dashboard]()s
+[Link to the live plot on the dashboard](https://lukewood.github.io/eia-py/dashboard/Self_Sufficiency_Index.html)
 
 <!--
 
@@ -260,3 +270,59 @@ _The SO2 score has been getting better over the years._
 - Many states fall under this category.
 
 -->
+
+---
+
+# Forecasting
+
+---
+
+US natural gas consumption Forecast by sector (Jan 2014-Nov 2022)
+
+---
+
+![bg left contain](assets/img/gas-consumption-real.png)
+
+- Real gas consumption (Jan 2014-Nov 2022)
+- Note the seasonal peaks
+- Electric power has two peaks, one in winter one in summer
+
+<!--
+Residential and commercial sectors have a seasonal peak in winter season due to higher demand for heating where natural gas is directly used in furnaces, heat pumps, radiators and other electric equipments.
+
+Industrial sector has a small peak in winter season reflecting some heating related industrial applications.
+
+Electric Power sector has two seasonal peaks due to weather fluctuations Winter peak due to more demand for heating. Summer peak due to more demand for air conditioning.
+-->
+
+---
+
+![bg left contain](assets/img/gas-consumption-forecast.png)
+
+Gas Consumption Forecast by Sector
+
+- (Oct 2021-Dec 2024)
+- Auto-regression model from the `statsmodels` package
+- [Link to the live plotly plot](https://lukewood.github.io/eia-py/dashboard/natural_gas_consumption_forecast_by_sector.html)
+
+<!--
+Residential and commercial sectors have a seasonal peak in winter season due to higher demand for heating where natural gas is directly used in furnaces, heat pumps, radiators and other electric equipments.
+
+Industrial sector has a small peak in winter season reflecting some heating related industrial applications.
+
+Electric Power sector has two seasonal peaks due to weather fluctuations Winter peak due to more demand for heating. Summer peak due to more demand for air conditioning.
+-->
+
+---
+
+# Other Topics
+
+- forecast of the real time organization (RTO) demand data
+- covariance analysis
+
+---
+
+# Thanks!
+
+![bg left contain](assets/img/good-job-2.png)
+Any questions?
