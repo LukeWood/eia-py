@@ -12,8 +12,8 @@ Our repository consists of two major components: a package `eia-py` and a set of
 exploratory data analysis notebooks (EDA).
 
 The package can be found under `eia`.  The package handles data scraping and loading.
-The `notebooks/` directory holds all tools required to perform exploratory data analysis.  The
-relationship between the two is that the scripts and notebooks in `notebooks/` rely on the
+The `Notebooks/` directory holds all tools required to perform exploratory data analysis.  The
+relationship between the two is that the scripts and notebooks in `Notebooks/` rely on the
 package in `eia`.
 
 The `docs/` directory contains the files needed for the dashboard and API documentation page. 
@@ -48,7 +48,7 @@ You can get an API key from [the EIA website](https://www.eia.gov/opendata/).
 
 ## Examples
 
-For examples, please check out our [notebooks directory](https://github.com/LukeWood/eia-py/tree/master/notebooks).
+For examples, please check out our [Notebooks directory](https://github.com/LukeWood/eia-py/tree/master/Notebooks).
 
 ## Contributing
 
