@@ -16,7 +16,11 @@ Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Description-Content-Type: text/markdown
 Provides-Extra: dev
 
-![](https://raw.githubusercontent.com/LukeWood/eia-py/master/media/logo.png?token=GHSAT0AAAAAABNFEWNO7NHME3ULKXK3SEEUY36XLVA)
+![](media/logo.png)
+
+[Check out our live data understanding dashboard!](https://lukewood.github.io/eia-py/dashboard/)
+
+[Check out the presentation slides](https://lukewood.github.io/eia-py/slides/)
 
 _Python bindings for the Energy Information Administration API_
 
@@ -26,9 +30,15 @@ Our repository consists of two major components: a package `eia-py` and a set of
 exploratory data analysis notebooks (EDA).
 
 The package can be found under `eia`.  The package handles data scraping and loading.
-The `notebooks/` directory holds all tools required to perform exploratory data analysis.  The
-relationship between the two is that the scripts and notebooks in `notebooks/` rely on the
+The `Notebooks/` directory holds all tools required to perform exploratory data analysis.  The
+relationship between the two is that the scripts and notebooks in `Notebooks/` rely on the
 package in `eia`.
+
+The `docs/` directory contains the files needed for the dashboard and API documentation page. 
+
+The `slides/` directory contains the slides which were used for the presentation.
+
+The `schema/` directory contains the API Schema details.
 
 ## Links
 
@@ -37,6 +47,25 @@ package in `eia`.
 - [Data Understanding Dashboard](https://lukewood.github.io/eia-py/dashboard)
 - [Per-Dataset Data Analysis](https://lukewood.github.io/eia-py/auto-reports)
 - [Presentation Slide Deck](https://lukewood.github.io/eia-py/slides)
+
+## Third Party Modules
+
+
+- os
+- re
+- collections
+- pandas
+- numpy
+- pandas_profiling
+- json
+- requests
+- tqdm
+- plotly
+- matplotlib
+- statsmodels
+- prophet
+- sklearn
+- warnings
 
 ## Quickstart
 
@@ -56,7 +85,7 @@ You can get an API key from [the EIA website](https://www.eia.gov/opendata/).
 
 ## Examples
 
-For examples, please check out our [notebooks directory](https://github.com/LukeWood/eia-py/tree/master/notebooks).
+For examples, please check out our [Notebooks directory](https://github.com/LukeWood/eia-py/tree/master/Notebooks).
 
 ## Contributing
 
